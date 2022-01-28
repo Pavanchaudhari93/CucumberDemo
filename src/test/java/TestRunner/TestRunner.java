@@ -11,9 +11,13 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 			
 			glue={"StepDefination"},
 			
+			dryRun=true,
+			
 			plugin = {"html:target/cucumber-html-report"},
 					
-			monochrome = true
+			monochrome = true,
+			
+			tags= {"@sanity,@regression"}
 		
 		)
 

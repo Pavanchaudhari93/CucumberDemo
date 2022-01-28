@@ -1,5 +1,6 @@
 package utilities;
 
+import org.testng.annotations.BeforeMethod;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -36,6 +37,7 @@ public class SeleniumUtility {
 		filePath ="/Users/pavanchaudhari/git/MorningBatch1/SamplePageObjectActitime/src/main/resources/testData/testAppData.properties";
 	}
 
+	@BeforeMethod
 	public WebDriver setUp(String browserName, String appUrl) {
 		properties = new Properties();
 		try {
